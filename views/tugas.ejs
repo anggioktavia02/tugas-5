@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>To-Do List App</title>
+    <link href="/style.css" rel="stylesheet"/>
+  </head>
+  <body> 
+    <form action="/add" method="POST">
+        <div class="isi">
+            <h1>What will you do ???</h1>
+                <input type="text" name="newTask" placeholder="Tulis disini" size=60/>
+                <button class="klik">Add Task</button>
+        </div>
+        <div class="bagian2">
+            <h3>To Do List</h3>
+            <% for( let i = 0; i < task.length; i++){ %>
+            <li>
+            <input type="checkbox" name="cek" value="<%= task[i] %>"/> 
+            <%= task[i] %>
+            </li>
+            <% } %>   
+
+        <button formaction="/remove" type="submit" class="klik">Done</button>
+    </form>
+        
+    </div>
+    <div class="bagian3">
+        <h3>Complete Task</h3>
+        <% for( let i = 0; i < complete.length; i++){ %>
+        <li>
+            <input type="checkbox" checked/>
+            <%= complete[i] %>
+        </li>
+        <% } %>
+    </div>
+  </body>
+</html>
+

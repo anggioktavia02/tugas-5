@@ -1,0 +1,46 @@
+body{
+    margin-top: 5%;
+    text-align: center;
+    padding: 0;
+    background-color: #496a9ccc;
+}
+
+.isi {
+    position: relative;
+    width: 100%;
+    min-height: 130px;
+    margin-top: 60px;
+    background-color: rgb(243, 246, 247);
+    box-shadow: 0 0 7px 0px rgba(136, 136, 136, 0.2);
+    padding: 3px;
+}
+
+.bagian2 {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 200px;
+    border-radius: 300px;
+    float: left;
+    top: 45px;
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+.bagian3 {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    float: right;
+    top: 45px;
+    margin-right: 120px;
+    font-size: 20px;
+}
+
+.klik {
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #86d7ee;
+    box-shadow: 0 0 7px 0px #182747;
+}
